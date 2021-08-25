@@ -4,6 +4,4 @@ COPY config/server.xml /config/
 COPY config/server.env /config/
 USER root
 RUN mkdir -p /my-special-folder
-RUN chown newuser /my-special-folder
-USER newuser
 COPY Dockerfile /my-special-folder/
